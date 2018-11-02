@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    align-items: center;
+    background-color: #ffcf0080;
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    margin: auto;
+    width: 70%;
+}
+
+.container > * {
+    background-color: white;
+    border-radius: 1%;
+    flex-basis: 30%;
+    font-size: 25px;
+    height: 335px;
+    text-align: center;
+}
+
+.bronze-cap {
+    box-shadow: 1px 1px 1px grey;
+    order: 0;
+}
+
+.silver-cap {
+    box-shadow: 1px 1px 1px grey;
+    order: 2;
+}
+
+.gold-cap {
+    box-shadow: 1px 1px 1px grey;
+    height: 385px;
+    order: 1;
+}
+
+.price {
+    color: green;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 15px;
+    margin: auto;
+    width: 55%;
+}
+
+.gold-cap > .price {
+    margin-bottom: 50px;
+}
+
+.gold-cap > img {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        align-items: center;
+        flex-direction: column;
+        height: 1005px;
+        width: 90%;
+    }
+
+    .gold-cap {
+        height: 335px;
+        order: 0;
+        width: 95%;
+    }
+
+    .gold-cap > .price {
+        margin-bottom: 25px;
+    }
+
+    .gold-cap > img {
+        margin-bottom: 0;
+    }
+
+    .gold-cap > p {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .silver-cap {
+        order: 1;
+        width: 95%;
+    }
+
+    .bronze-cap {
+        order: 2;
+        width: 95%;
+    }
+}
